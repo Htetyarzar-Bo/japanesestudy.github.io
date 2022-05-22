@@ -1,0 +1,59 @@
+.wrapper{
+  justify-content: center;
+  display: flex;
+}
+
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 80px;
+  align-items: center;
+  line-height: 80px;
+  overflow: hidden;  /* သတ်မှတ်ထားတဲ့ height or width ထက်ကျော် သွားရင် မမြင်ရတော့အောင် လုပ်ပေးတာ  */ 
+}
+.dynamic-txts li{
+  list-style: none;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 10s steps(2) infinite; /* 1 slide 5s */
+}
+@keyframes slide {   /* list တွေကို အပေါ်အောက် ‌ရွေ့ ဖို့ */
+  100%{
+    top: -160px;   /* height 90px -> 5 list 450px*/
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 50px;
+  align-items: center;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: #e4e7e9;
+  animation: typing 5s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .wrapper .dynamic-txts{
+      height: 80px;
+      line-height: 80px;
+  }
+  .dynamic-txts li{
+      font-size: 20px;
+  }
+}

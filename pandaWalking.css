@@ -1,0 +1,69 @@
+#runner{
+    margin-top: 10px;
+    background: url("pandawalking.png");
+    width: 73px;  /*frame ရဲ့ width ကို ပုံ အရေအတွက် နဲ့ စား */
+    height:100px;
+    animation: walk 1s steps(12) infinite,   /*steps(number of images in photo)*/
+               forward 5s linear infinite;
+}
+
+@keyframes walk{   /*frame အတွင်း က section 12 ခု ကို ‌ရွေ့တာ  */
+    0%{
+        background-position: 0px;  /*start point*/
+    }
+    100%{
+        background-position: 880px;  /*width of photo */
+    }
+}
+
+@keyframes forward{  /*frame တစ်ခု လုံး ‌ရွေ့တာ */
+    0%{
+        transform: translateX(500px);  /*margin-left :700px */
+    }
+    100%{
+        transform: translateX(900px);
+    }
+
+}
+@media screen and (max-width:1000px) {
+    @keyframes forward{  /*frame တစ်ခု လုံး ‌ရွေ့တာ */
+        0%{
+            transform: translateX(100px);  /*margin-left :700px */
+        }
+        100%{
+            transform: translateX(700px);
+        }
+    
+    }
+}
+
+@media screen and (max-width:416px)  {
+#runner{ 
+    margin-top: 10px;
+    background: url("pandawalkingsmall.png");
+    width:58px;  /*frame ရဲ့ width ကို ပုံ အရေအတွက် နဲ့ စား */
+    height:81px;
+    animation: walk 1s steps(12) infinite,   /*steps(number of images in photo)*/
+               forward 5s linear infinite;
+}
+
+@keyframes walk{   /*frame အတွင်း က section 12 ခု ကို ‌ရွေ့တာ  */
+    0%{
+        background-position: 0px;  /*start point*/
+    }
+    100%{
+        background-position: 726px;  /*width of photo */
+    }
+}
+
+    @keyframes forward{  /*frame တစ်ခု လုံး ‌ရွေ့တာ */
+        0%{
+            transform: translateX(0px);  /*margin-left :500px */
+        }
+        100%{
+            transform: translateX(400px);
+        }
+    
+    }
+
+}

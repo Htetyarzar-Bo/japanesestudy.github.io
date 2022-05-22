@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+p,h1{
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.Amenu{
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: #bcbfc0;
+    width:700px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    
+}
+.Amenu ul{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.Amenu ul .list,.Amenu ul .list a,.Amenu ul .list span{
+   
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    color: #0c0c0c;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.Amenu ul .list:hover,
+.Amenu ul .list:hover a,
+.Amenu ul .list:hover span{
+    position: relative;
+    border-radius: 10px;
+    background: #676768;
+    color: #ffffff;
+}
+
+ button{
+    width: 40px;
+    height: 40px;
+    background: #747475;
+    color: #ffffff;
+    margin: 5px;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 20%;
+    border: 2px solid rgb(75, 74, 74);
+}
+
+button:hover{
+    background: #454546;
+}
+
+.furi-show,.myan-show{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    color: #0c0c0c;
+}
+.furigana {
+    
+    color: #1e8ab4;
+    width:auto ;
+    max-height:auto ;
+    display: none;
+    
+}
+.furigana.active,.Myan-def.active{
+    display: block;
+   
+}
+.Myan-def{
+    color: #0660b4;
+    padding-bottom:20px;
+    display: none;
+}
+.submenu1{
+   display: none;
+}
+
+.submenu1 li:hover{
+    border-radius: 10px;
+    background: #676768;
+    color: #ffffff;
+}
+
+.Amenu ul .list:hover .submenu1{
+    width: 130px;
+    position: absolute;
+    background: #bcbfc0;
+    height: 120px;
+    text-align: center;
+   display: block;
+   
+}
+.Amenu ul .list:hover .submenu1 ul{
+    display: block;
+    text-align: center;
+ }
+ .Amenu ul .list:hover .submenu1 ul li{
+    left: 15px;
+     opacity: 1;
+     display: block;
+    height: 50px;
+    line-height: 50px;
+    margin:5px 15px;
+    text-align: center;
+ }

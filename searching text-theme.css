@@ -1,0 +1,96 @@
+.theme-change{
+    position: relative;
+    display:flex;
+    width: 300px;
+    
+    align-items: center;
+    margin-right: 50px;
+}
+.Day-mode{
+    width:120px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#toggle{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 65px;
+    background-color: #15181f;
+    position: relative;
+    right: 10px;
+    top: 0px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+#toggle:after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 7px;
+    border-radius: 50%;
+}
+
+.dark-theme{
+    position: relative;
+    background-color: #0c0c0c;
+    color: #ffffff;
+    z-index: 1;
+}
+.dark-theme #toggle{
+    background-color: #ffffff;
+}
+.dark-theme #toggle:after{
+    background-color: transparent;
+    box-shadow: 8px 8px #15181f;
+    top: -3px;
+    left: 32px;
+}
+.dark-theme .container,
+.dark-theme .SideBar,
+.dark-theme #sidebar-menu,
+.dark-theme .scroll-menu,
+.dark-theme .Def-box,
+.dark-theme .search-box{
+    background-color: #0c0c0c;
+}
+.dark-theme .sidebar-header p,
+.dark-theme .sidebar-header p span,
+.dark-theme #sidebar-menu,
+.dark-theme .scroll-menu li a,
+.dark-theme .Paragraph p,
+.dark-theme #word,
+.dark-theme #yomi,
+.dark-theme #mean{
+   color: #ffffff;
+}
+
+.dark-theme .scroll-menu li:hover{
+    background-color: #3b3b3b;
+ }
+ .dark-theme  .fas,
+ .dark-theme .P-header,
+ .dark-theme .para_title,
+ .dark-theme .Def-box p,
+ .dark-theme .Def-box h2,
+.dark-theme .search-box p{
+    color: #dbd7d7;
+ }
+
+ .dark-theme .container {
+   box-shadow:10px -5px 20px #4a4a4b;
+  }
+  .dark-theme .Def-open,
+  .dark-theme #Close-Btn{
+    background-color: #3b3b3b;
+    border:2px solid #dbd7d7;
+  }
+  .dark-theme #remark{
+      color: #ebee53;
+  }
